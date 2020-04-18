@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        
+        <script src="https://code.jquery.com/jquery-3.5.0.slim.js"></script>
+
+        <title> وفي ذلك فليتنافس المتنافسون </title>
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+        <link rel="manifest" href="./ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+
+            body{
+                width: 100%;
+                /* max-width: 680px; */
+                margin: 0%;
+                background-size: 100%;
+                background-image:url('./bg.jpg');
+                background-repeat: no-repeat;
+                /*  background-position:50% */
+                }
+
+            /* Button Style !!!!!!!!!!!!!!!!!!!*/
+            .button{
+            margin: 0;
+            cursor: pointer;
+            border: 1px solid #bbb;
+            overflow: visible;
+            font: bold 30px arial, helvetica, sans-serif;
+            text-decoration: none;
+            white-space: nowrap;
+            color: #555;
+            background-color: #ddd;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+            background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+            background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+            background-image: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+            background-image: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+            background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+            -webkit-transition: background-color .2s ease-out;
+            -moz-transition: background-color .2s ease-out;
+            -ms-transition: background-color .2s ease-out;
+            -o-transition: background-color .2s ease-out;
+            transition: background-color .2s ease-out;
+            background-clip: padding-box;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+            -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+            text-shadow: 0 1px 0 rgba(255,255,255, .9);
+            }
+            .button:active{
+            background: #e9e9e9;
+            }
+            .button.small{
+            padding: 4px 12px;
+            }
+            .button.red{
+            background-color: #3582ca;
+            border-color: #3556c4;
+            color: #fff;
+            text-shadow: 0 1px 0 rgba(0,0,0,.2);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+            background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+            background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+            background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+            background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+            background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+            }
+
+            .button.red:active{
+            background: #35a7c4;
+            }
+            /* End Button Style !!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+            /* Select Drop Down Style!!!!!!!!!!!!!!!!!!!*/
+            /* Reset Select */
+            select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            outline: 0;
+            box-shadow: none;
+            border: 0 !important;
+            background: #2c3e50;
+            background-image: none;
+            }
+            /* Remove IE arrow */
+            select::-ms-expand {
+            display: none;
+            }
+            /* Custom Select */
+            .select {
+            /* position: relative; */
+            /* display: flex; */
+            width: 15em;
+            /* height: 3em; */
+            /* line-height: 3; */
+            background: #2c3e50;
+            overflow: hidden;
+            border-radius: .5em;
+            }
+            select {
+            /* flex: 1; */
+            padding: 2em;
+            color: #fff;
+            cursor: pointer;
+            }
+            /* Arrow */
+            .select::after {
+            content: '\25BC';
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 1em;
+            background: #34495e;
+            cursor: pointer;
+            pointer-events: none;
+            -webkit-transition: .25s all ease;
+            -o-transition: .25s all ease;
+            transition: .25s all ease;
+            }
+            /* Transition */
+            .select:hover::after {
+            color: #f39c12;
+            }
+            /* End Drop Down Style!!!!!!!!!!!!!!!!!!!*/
+
+        </style>
+        
+    </head>
+    <body>
+
+        <p style="line-height: 10ch">&nbsp</p>
+
+        <div align=right style="color:#000000; font-size: 15pt " >
+            <h1>
+                ابدأ بالقراءة ثم عد هنا لتسجل تقدمك
+            </h1>
+        </div>
+
+        <p style="line-height: 2ch">&nbsp</p>
+        
+        <!-- sura and aya selectors start-->
+
+        <div align=right style="float: right; width: 50%">
+            <select class="select" name="Sura" id="sura_selector" onChange="myFunc(this);"></select>
+        </div>
+
+        <div align=right style="float: right; width: 50%">
+            <select class="select" id='aya_selector'></select>
+        </div>
+
+        <script>
+            // fil sura selector
+            
+            var suras = [ "الفاتحة", "البقرة", "آل عمران", "النساء", "المائدة", "الأنعام", "الأعراف", "الأنفال", "التوبة", "يونس", "هود", "يوسف", "الرعد", "ابراهيم", "الحجر", "النحل", "الإسراء", "الكهف", "مريم", "طه", "الأنبياء", "الحج", "المؤمنون", "النور", "الفرقان", "الشعراء", "النمل", "القصص", "العنكبوت", "الروم", "لقمان", "السجدة", "الأحزاب", "سبإ", "فاطر", "يس", "الصافات", "ص", "الزمر", "غافر", "فصلت", "الشورى", "الزخرف", "الدخان", "الجاثية", "الأحقاف", "محمد", "الفتح", "الحجرات", "ق", "الذاريات", "الطور", "النجم", "القمر", "الرحمن", "الواقعة", "الحديد", "المجادلة", "الحشر", "الممتحنة", "الصف", "الجمعة", "المنافقون", "التغابن", "الطلاق", "التحريم", "الملك", "القلم", "الحاقة", "المعارج", "نوح", "الجن", "المزمل", "المدثر", "القيامة", "الانسان", "المرسلات", "النبإ", "النازعات", "عبس", "التكوير", "الإنفطار", "المطففين", "الإنشقاق", "البروج", "الطارق", "الأعلى", "الغاشية", "الفجر", "البلد", "الشمس", "الليل", "الضحى", "الشرح", "التين", "العلق", "القدر", "البينة", "الزلزلة", "العاديات", "القارعة", "التكاثر", "العصر", "الهمزة", "الفيل", "قريش", "الماعون", "الكوثر", "الكافرون", "النصر", "المسد", "الإخلاص", "الفلق", "الناس" ]
+            var select1 = '';
+            for (i=0;i<suras.length;i++){
+                    select1 += '<option value="' + suras[i] + '">' + suras[i] + '</option>';
+                };
+                $('#sura_selector').html(select1);
+        </script>
+
+        <script>
+
+            // catch selected sura
+            // find number of ayat from ayatNum dictionary for selected sura
+            // push number of ayat into a drop down generator
+
+            function myFunc(sel) {
+                var selectedSura = sel.options[sel.selectedIndex].text;
+                var ayatNum = { "الفاتحة" : "7", "البقرة" : "286", "آل عمران" : "200", "النساء" : "176", "المائدة" : "120", "الأنعام" : "165", "الأعراف" : "206", "الأنفال" : "75", "التوبة" : "129", "يونس" : "109", "هود" : "123", "يوسف" : "111", "الرعد" : "43", "ابراهيم" : "52", "الحجر" : "99", "النحل" : "128", "الإسراء" : "111", "الكهف" : "110", "مريم" : "98", "طه" : "135", "الأنبياء" : "112", "الحج" : "78", "المؤمنون" : "118", "النور" : "64", "الفرقان" : "77", "الشعراء" : "227", "النمل" : "93", "القصص" : "88", "العنكبوت" : "69", "الروم" : "60", "لقمان" : "34", "السجدة" : "30", "الأحزاب" : "73", "سبإ" : "54", "فاطر" : "45", "يس" : "83", "الصافات" : "182", "ص" : "88", "الزمر" : "75", "غافر" : "85", "فصلت" : "54", "الشورى" : "53", "الزخرف" : "89", "الدخان" : "59", "الجاثية" : "37", "الأحقاف" : "35", "محمد" : "38", "الفتح" : "29", "الحجرات" : "18", "ق" : "45", "الذاريات" : "60", "الطور" : "49", "النجم" : "62", "القمر" : "55", "الرحمن" : "78", "الواقعة" : "96", "الحديد" : "29", "المجادلة" : "22", "الحشر" : "24", "الممتحنة" : "13", "الصف" : "14", "الجمعة" : "11", "المنافقون" : "11", "التغابن" : "18", "الطلاق" : "12", "التحريم" : "12", "الملك" : "30", "القلم" : "52", "الحاقة" : "52", "المعارج" : "44", "نوح" : "28", "الجن" : "28", "المزمل" : "20", "المدثر" : "56", "القيامة" : "40", "الانسان" : "31", "المرسلات" : "50", "النبإ" : "40", "النازعات" : "46", "عبس" : "42", "التكوير" : "29", "الإنفطار" : "19", "المطففين" : "36", "الإنشقاق" : "25", "البروج" : "22", "الطارق" : "17", "الأعلى" : "19", "الغاشية" : "26", "الفجر" : "30", "البلد" : "20", "الشمس" : "15", "الليل" : "21", "الضحى" : "11", "الشرح" : "8", "التين" : "8", "العلق" : "19", "القدر" : "5", "البينة" : "8", "الزلزلة" : "8", "العاديات" : "11", "القارعة" : "11", "التكاثر" : "8", "العصر" : "3", "الهمزة" : "9", "الفيل" : "5", "قريش" : "4", "الماعون" : "7", "الكوثر" : "3", "الكافرون" : "6", "النصر" : "3", "المسد" : "5", "الإخلاص" : "4", "الفلق" : "5", "الناس" : "6" };
+                var thisAyat = ayatNum[selectedSura]
+                var select2 = '';
+                for (j=1;j<=thisAyat;j++){
+                    select2 += '<option val=' + j + '>' + j + '</option>';
+                };
+                $('#aya_selector').html(select2);
+
+            }
+        </script>       
+        
+       <!-- end sura and aya selectors-->
+
+       <p style="line-height: 4ch">&nbsp</p>
+
+        <div style="float: left; width: 100%">
+            <button class="small red button" onclick="window.open('', '_self', ''); window.close();"> &nbsp;&nbsp; تـقدم &nbsp;&nbsp; </button>
+        </div>
+
+    </body>
+</html>
