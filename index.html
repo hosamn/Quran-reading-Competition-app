@@ -35,21 +35,21 @@
 </head>
 
 <body>
-
-
-  <form class="box" action="mainpage.html" method="get">
-
+  <div class="box">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v6.0"></script>
     <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="rounded"
       data-auto-logout-link="true" data-use-continue-as="true" data-width=""></div>
 
-    <!-- <input type="submit" name="" value="LOGIN WITH FACEBOOK" /> -->
+    <input type="submit" name="" value="LOGIN WITH FACEBOOK" />
     <h1>--------- OR ---------</h1>
-    <input type="text" name="" placeholder="Username" />
-    <input type="password" name="" placeholder="Password" />
-    <input type="submit" name="" value="LOGIN" />
-  </form>
+
+    <form action="mainpage.html" method="get">
+      <input type="text" name="" placeholder="Username" />
+      <input type="password" name="" placeholder="Password" />
+      <input type="submit" name="" value="LOGIN" />
+    </form>
+  </div>
 </body>
 
 </html>
