@@ -3,7 +3,7 @@ body {
   /* max-width: 680px; */
   margin: 0%;
   background-size: 100%;
-  background-image: url("./bg.jpg");
+  background-image: url("css/bg.jpg");
   background-repeat: no-repeat;
   /*  background-position:50% */
 }
