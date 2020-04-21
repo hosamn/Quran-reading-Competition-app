@@ -3,5 +3,5 @@ This is a Quraan reading competition app where you record your current reading p
 
 
 ## Credits:
-* Tanzil Quran Text (Simple Clean, version 1.0.2) Tanzil.net
+* Tanzil Quran Text (Simple Clean, version 1.0.2) http://tanzil.net/docs/Credits
 * 
