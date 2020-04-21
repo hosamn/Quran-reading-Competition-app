@@ -1,4 +1,16 @@
 body {
+  
+  /* max-width: 680px;
+  margin: 0%;
+  background-size: 100%;
+  background-image: url("css/bg.jpg");
+  background-repeat: no-repeat;
+  */
+    
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
   background-color: #000028;
   min-height: 100vh;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%), radial-gradient(circle, rgba(255, 255, 255, 0.7) 20%, transparent 30%);
