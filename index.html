@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="css/loginstyle.css" />
-    <link rel="stylesheet" href="css/bg.css" />
-    
-    <script src="https://code.jquery.com/jquery-3.5.0.slim.js"></script>
+<head>
 
-    <title> وفي ذلك فليتنافس المتنافسون </title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
-    <link rel="manifest" href="./ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/loginstyle.css" />
+  <link rel="stylesheet" href="css/bg.css" />
 
-  </head>
-  
-  <body>
-    <form class="box" action="mainpage.html" method="get">
-      <input type="submit" name="" value="LOGIN WITH FACEBOOK" />
-      <h1>--------- OR ---------</h1>
-      <input type="text" name="" placeholder="Username" />
-      <input type="password" name="" placeholder="Password" />
-      <input type="submit" name="" value="LOGIN" />
-    </form>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.0.slim.js"></script>
+
+  <title> وفي ذلك فليتنافس المتنافسون </title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+  <link rel="manifest" href="./ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+
+  <form class="box" action="mainpage.html" method="get">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v6.0"></script>
+    <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="rounded"
+      data-auto-logout-link="true" data-use-continue-as="true" data-width=""></div>
+
+    <!-- <input type="submit" name="" value="LOGIN WITH FACEBOOK" /> -->
+    <h1>--------- OR ---------</h1>
+    <input type="text" name="" placeholder="Username" />
+    <input type="password" name="" placeholder="Password" />
+    <input type="submit" name="" value="LOGIN" />
+  </form>
+</body>
+
 </html>
