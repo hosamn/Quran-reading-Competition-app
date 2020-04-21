@@ -49,11 +49,15 @@
         <!-- sura and aya selectors start-->
 
         <div align=right style="float: right; width: 50%">
-            <select class="select" name="Sura" id="sura_selector" onChange="myFunc(this);"></select>
+            <select class="select" name="Sura" id="sura_selector" onChange="myFunc(this);">
+                <option value="" disabled selected hidden>إختر السورة</option>
+            </select>
         </div>
 
         <div align=right style="float: right; width: 50%">
-            <select class="select" id='aya_selector'></select>
+            <select class="select" id='aya_selector'>
+                <option value="" disabled selected hidden>إختر الآية</option>
+            </select>
         </div>
 
         <script>
